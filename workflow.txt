@@ -1,0 +1,27 @@
+
+Data Analysis Workflow for Brent Oil Price Change Point Analysis
+============================================================
+1. Data Preparation:
+   - Load Brent oil price data (1987-2022) from data/BrentOilPrices.csv.
+   - Convert Date column to datetime, handling mixed formats (e.g., 20-May-87, Apr 22, 2020).
+   - Handle missing values and outliers, if any.
+2. Exploratory Data Analysis (EDA):
+   - Plot raw price series to identify trends and shocks.
+   - Compute log returns to analyze volatility and check stationarity.
+   - Perform statistical tests (e.g., ADF test) in Task 2.
+3. Event Data Compilation:
+   - Research 10-15 major events (geopolitical, OPEC, economic).
+   - Save in data/events.csv with dates and descriptions.
+4. Change Point Modeling (Task 2):
+   - Use PyMC to implement Bayesian Change Point model.
+   - Define priors for switch points and parameters (mean, volatility).
+   - Run MCMC to estimate posterior distributions.
+5. Interpretation (Task 2):
+   - Align change points with events from events.csv.
+   - Quantify price impacts (e.g., percentage change in mean).
+6. Visualization and Dashboard (Task 3):
+   - Build Flask/React dashboard to display trends and event impacts.
+   - Include interactive features (filters, date ranges).
+7. Reporting:
+   - Summarize findings in a report or blog post for stakeholders.
+============================================================
